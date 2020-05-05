@@ -124,6 +124,7 @@ h6 {
   transition: all 0.5s;
   overflow: hidden;
   color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(5, 87, 158, 0.9);
 }
 
 #topbar.topbar-scrolled {
@@ -180,7 +181,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(5, 87, 158, 0.9);
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -482,7 +483,7 @@ h6 {
   height: 80vh;
   overflow: hidden;
   position: relative;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/products/anshu-a-oJdsl8Xn4W0-unsplash.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -490,7 +491,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(6, 101, 183, 0.9);
+  /* background: rgba(6, 101, 183, 0.9); */
   position: absolute;
   bottom: 0;
   top: 0;

@@ -1,3 +1,18 @@
+<!-- <?php
+
+if($_POST["submit"]) {
+    $recipient="karki011@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+$thankYou=
+<p>Thank you! Your message has been sent.</p>
+"; } ?> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,10 +67,8 @@
         <div class="contact-info mr-auto">
           <ul>
             <li>
-              <i class="icofont-envelope"></i
-              ><a href="mailto:contact@example.com"
-                >nileshtrivedi1203@yahoo.in</a
-              >
+              <i class="icofont-envelope"></i>
+              <a href="mailto:jaynilhosieryworks@gmail.com"> Email </a>
             </li>
             <li><i class="icofont-phone"></i> +91 9426322292</li>
             <li>
@@ -66,6 +79,7 @@
         </div>
         <div class="cta">
           <a href="#portfolio" class="scrollto">Products</a>
+          <a class="scrollto" href="tel:+91-9426322292">+91 9426322292</a>
         </div>
       </div>
     </div>
@@ -96,21 +110,17 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex justify-cntent-center align-items-center">
-      <div
-        id="heroCarousel"
-        class="container carousel carousel-fade"
-        data-ride="carousel"
-      >
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="carousel-container">
-            <h2 class="animated fadeInDown">
-              Welcome to <span>Jaynil Hosiery Works</span>
-            </h2>
-            <p class="animated fadeInUp">
-              Coming soon!
-            </p>
-          </div>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">
+            Welcome to <span>Jaynil Hosiery Works</span>
+          </h2>
+          <h3 class="animated fadeInUp" style="color: white;">
+            Wear a mask!
+            <br />
+            It's a smart and "right thing" to do.
+          </h3>
         </div>
       </div>
     </section>
@@ -121,45 +131,33 @@
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>About Us</h2>
+            <h2>Our Vision</h2>
+            <p>Jaynil Hosiery works was founded in 2005</p>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              To emerge as the leading Disposable Goods and hosiery corporation
+              delivering total value across the globe.
             </p>
           </div>
 
           <div class="row content">
             <div class="col-lg-6">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <h3>
+                Our Core Values
+              </h3>
               <ul>
-                <li>
-                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat
-                </li>
-                <li>
-                  <i class="ri-check-double-line"></i> Duis aute irure dolor in
-                  reprehenderit in voluptate velit
-                </li>
-                <li>
-                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat
-                </li>
+                <li><i class="ri-check-double-line"></i> Integrity</li>
+                <li><i class="ri-check-double-line"></i> Honesty</li>
+                <li><i class="ri-check-double-line"></i> Commitment</li>
               </ul>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
+              <h3>Our Mission</h3>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                Through our brand of Surgical products, Disposable Goods and
+                essential wear, offer utmost comfort and safety irrespective of
+                weather and geographical locations.
               </p>
-              <a href="#" class="btn-learn-more">Learn More</a>
+              <a href="#contact" class="btn-learn-more">Learn More</a>
             </div>
           </div>
         </div>
@@ -170,13 +168,13 @@
       <section id="cta" class="cta">
         <div class="container">
           <div class="row" data-aos="zoom-in">
-            <div class="col-lg-9 text-center text-lg-left">
-              <h3>Call To Inquire</h3>
-            </div>
-            <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="#">
-                <strong>Call</strong>: Nilesh Trivedi</a
-              >
+            <div class="col-lg-12 text-center text-lg-center">
+              <h3>Inquiry about price</h3>
+              <a class="cta-btn align-middle" href="tel:+91-9426322292">
+                <strong>Call:</strong>
+
+                Nilesh Trivedi
+              </a>
             </div>
           </div>
         </div>
@@ -188,61 +186,27 @@
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Products</h2>
+            <p>For all prices inquiries call Nilesh Trivedi</p>
           </div>
 
           <div class="row">
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
-                <!-- <li data-filter="*" class="filter-active">All</li> -->
-                <li data-filter=".filter-app" class="filter-active">Masks</li>
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">Masks</li>
                 <li data-filter=".filter-card">Hand-Gloves</li>
-                <li data-filter=".filter-web">Bouffant-Cap</li>
-                <li data-filter=".filter-web">Shoes-Cover</li>
-                <li data-filter=".filter-web">Vest</li>
-                <li data-filter=".filter-web">Briefs</li>
-                <li data-filter=".filter-web">Hosiery Hand-Gloves</li>
+                <li data-filter=".filter-cap">Caps</li>
+                <li data-filter=".filter-shoe">Shoes-Cover</li>
+                <li data-filter=".filter-vest">Vest</li>
+                <li data-filter=".filter-brief">Briefs</li>
+                <li data-filter=".filter-Hosiery">Hosiery Hand-Gloves</li>
               </ul>
             </div>
           </div>
 
           <div class="row portfolio-container">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img
-                src="assets/img/products/Hosiery-mask.png"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-info">
-                <h4>Hosiery-mask</h4>
-                <p>Reusable Cotton/Lycra Dual Layer Face Masks</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img
-                src="assets/img/portfolio/portfolio-2.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <a
-                  href="assets/img/portfolio/portfolio-2.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox preview-link"
-                  title="Web 3"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a
-                  href="portfolio-details.html"
-                  class="details-link"
-                  title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-
+            <!-- mask section start -->
+            <!-- template for new mask start -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img
                 src="assets/img/products/2ply-mask.png"
@@ -254,6 +218,11 @@
                 <p>Non Woven 2 Ply Loop Face Mask for Surgical</p>
               </div>
             </div>
+            <!-- template for new mask end -->
+            <!-- add below -->
+
+            <!-- add above -->
+
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img
                 src="assets/img/products/2ply-tie-face-mask.jpg"
@@ -265,56 +234,42 @@
                 <p>Non Woven 2 Ply Loop Face Mask for Surgical</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img
-                src="assets/img/portfolio/portfolio-4.jpg"
+                src="assets/img/products/Hosiery-mask.png"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <a
-                  href="assets/img/portfolio/portfolio-4.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox preview-link"
-                  title="Card 2"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a
-                  href="portfolio-details.html"
-                  class="details-link"
-                  title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
+                <h4>Hosiery-mask</h4>
+                <p>Reusable Cotton/Lycra Dual Layer Face Masks</p>
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img
-                src="assets/img/portfolio/portfolio-5.jpg"
+                src="assets/img/products/3ply-tie-on-mask.jpeg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <a
-                  href="assets/img/portfolio/portfolio-5.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox preview-link"
-                  title="Web 2"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a
-                  href="portfolio-details.html"
-                  class="details-link"
-                  title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
+                <h4>3 PLY SURGICAL MASK TIE ON</h4>
+                <p>3 Ply Surgical Mask, Headloop, Tie On.</p>
               </div>
             </div>
-
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <img
+                src="assets/img/products/n95-foldable.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>N95 Mask Folding</h4>
+                <p>
+                  BREATHABLE - Disposable dust mask N95 can dehumidify and
+                  ventilate.
+                </p>
+              </div>
+            </div>
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <img
                 src="assets/img/products/3ply-mask.png"
@@ -329,84 +284,372 @@
               </div>
             </div>
 
+            <!-- mask section end -->
+
+            <!-- Hand-glove section start -->
+
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <img
-                src="assets/img/portfolio/portfolio-7.jpg"
+                src="assets/img/products/hand-glove/Cotton-Hosiery-Hand-gloves.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <a
-                  href="assets/img/portfolio/portfolio-7.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox preview-link"
-                  title="Card 1"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a
-                  href="portfolio-details.html"
-                  class="details-link"
-                  title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
+                <h4>Cotton Hosiery Hand gloves</h4>
+                <p>
+                  Extensively utilized in mining, pharmaceutical, health
+                  facility, chemical and lots of other industries, these gloves
+                  are to be had in different customised choices in order to
+                  cater variegated needs of our clients.
+                </p>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <img
-                src="assets/img/portfolio/portfolio-8.jpg"
+                src="assets/img/products/hand-glove/Nitrial-Hand-gloves.png"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <a
-                  href="assets/img/portfolio/portfolio-8.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox preview-link"
-                  title="Card 3"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a
-                  href="portfolio-details.html"
-                  class="details-link"
-                  title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
+                <h4>Nitrial Hand gloves</h4>
+                <p>
+                  Violet Blue Nitrile Gloves Powder Free - 3 Mil offer good
+                  dexterity and sensitivity while protecting hands on the job.
+                </p>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <img
-                src="assets/img/portfolio/portfolio-9.jpg"
+                src="assets/img/products/hand-glove/Vynile-clear-Hand-gloves.jpg"
                 class="img-fluid"
                 alt=""
               />
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <a
-                  href="assets/img/portfolio/portfolio-9.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox preview-link"
-                  title="Web 3"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a
-                  href="portfolio-details.html"
-                  class="details-link"
-                  title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
+                <h4>Vinyl clear Hand gloves</h4>
+                <p>
+                  Vinyl Medical Gloves are powder-free for those who are
+                  sensitive to residue that can cause unwanted reactions.
+                </p>
               </div>
             </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <img
+                src="assets/img/products/hand-glove/blue-Vinyl-Disposable-Gloves.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Vinyl-Disposable-Gloves</h4>
+                <p>
+                  Vinyl disposable gloves protect hands from unwanted and
+                  harmful chemicals.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <img
+                src="assets/img/products/hand-glove/examination-latex-hand-gloves.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Examination Latex Hand Gloves</h4>
+                <p>
+                  The hand gloves used for preventing granulose and allergic
+                  reactions as these are pre powdered with bio-absorbable
+                  cornstarch.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <img
+                src="assets/img/products/hand-glove/Plastic-Hand-gloves.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Clear Plastic Gloves</h4>
+                <p>
+                  Designed especially for use as food handling gloves, they're
+                  made of a textured high-density polyethylene with strong seams
+                  for maximum durability.
+                </p>
+              </div>
+            </div>
+
+            <!-- handglove end section -->
+
+            <!-- cap section start -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-cap">
+              <img
+                src="assets/img/products/cap/Bouffant-Cap.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Bouffant Cap</h4>
+                <p>
+                  Bouffant Cap are available in two sizes 16", 18" and 20".
+                  <br />
+                  White , Blue, Green are colour option available.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-cap">
+              <img
+                src="assets/img/products/cap/Shower-cap .png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Shower Cap</h4>
+                <p>
+                  A shower cap provides water resistance and leakage prevention.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-cap">
+              <img
+                src="assets/img/products/cap/Surgeon-Cap.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Surgeon Cap</h4>
+                <p>
+                  To cater to the medical industry, we offer the best quality of
+                  Disposable Surgeon Caps. These Surgeon Caps are manufactured
+                  in stringent compliance with industrial quality standards at
+                  our high-end infrastructure facility. These Caps are priced
+                  economically to suit the client’s budget. These Caps are
+                  resistant to dirt, chemicals and other abrasive and damaging
+                  substances. These Caps are available to clients at highly
+                  economical prices.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-cap">
+              <img
+                src="assets/img/products/cap/summer-cap.webp"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Summer Cap</h4>
+                <p>
+                  A soft, low-profile closure ensures this ultra-breathable cap
+                  is extra comfortable. Can be order in multiple colors.
+                </p>
+              </div>
+            </div>
+
+            <!-- cap section end -->
+
+            <!-- shoe section start -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-shoe">
+              <img
+                src="assets/img/products/shoe/H.M-Shoescover.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>H. M Shoes Cover</h4>
+                <p>
+                  These covers are light weighted and offer longer life
+                  functionality. All our covers give optimum cover to the shoes
+                  and are developed by deep experience holding textile experts.
+                  Our covers are available in different options and easy to use
+                  by the consumers.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-shoe">
+              <img
+                src="assets/img/products/shoe/ld-shoe-cover.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>L. D. Shoes Cover</h4>
+                <p>
+                  These disposeable covers are light weighted and offer longer
+                  life functionality.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-shoe">
+              <img
+                src="assets/img/products/shoe/non-woven-show-cover.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Non Woven Shoes Cover</h4>
+                <p>
+                  Anti-Skid shoe cover in light blue. <br />
+                  Non-woven polypropylene in light blue
+                </p>
+              </div>
+            </div>
+            <!-- shoe section end -->
+
+            <!-- vest section start -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-vest">
+              <img
+                src="assets/img/products/shoe/Jaynil-White.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Jaynil Grey</h4>
+                <p>
+                  Jaynil Grey 1×1 R. N.S S. P
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-vest">
+              <img
+                src="assets/img/products/shoe/white-vest.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Jaynil White</h4>
+                <p>
+                  Jaynil White 1×1 R. N<br />
+                  Jaynil White 1×1 R.N.S S. P
+                </p>
+              </div>
+            </div>
+            <!-- vest section end -->
+            <!-- brief section start -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-brief">
+              <img
+                src="assets/img/products/shoe/coming-soon.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Zil Cover Trunks</h4>
+                <p>
+                  Zil Cover Trunks
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-brief">
+              <img
+                src="assets/img/products/shoe/coming-soon.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Zil. Cover C. D</h4>
+                <p>
+                  Zil. Cover C. D
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-brief">
+              <img
+                src="assets/img/products/shoe/coming-soon.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Zilex Cover Trunks</h4>
+                <p>
+                  Zilex Cover Trunks
+                </p>
+              </div>
+            </div>
+            <!-- brief section end -->
+
+            <!-- Hosiery section start -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Hosiery">
+              <img
+                src="assets/img/products/hand-glove/ladies-hand-gloves-500x500.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Skin Hosiery Hand Gloves</h4>
+                <p>
+                  Skin Hosiery Hand Gloves
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Hosiery">
+              <img
+                src="assets/img/products/hand-glove/WhiteHosiery-Hand-gloves.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>White Hosiery Hand gloves</h4>
+                <p>
+                  White gloves made of 100% cotton. Perfect for theater and
+                  group functions. One Size Fits Most.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Hosiery">
+              <img
+                src="assets/img/products/hand-glove/black-hand-gloves.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Black Hosiery Hand gloves</h4>
+                <p>
+                  Black gloves made of 100% cotton. Perfect for theater and
+                  group functions. One Size Fits Most.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Hosiery">
+              <img
+                src="assets/img/products/hand-glove/printed-hand-glove.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Printed Hosiery Hand gloves</h4>
+                <p>
+                  Printed Hosiery Hand gloves
+                </p>
+              </div>
+            </div>
+            <!-- Hosiery section end -->
           </div>
         </div>
       </section>
       <!-- End Portfoio Section -->
+
+      <!-- test contact -->
+      <!-- <?=$thankYou ?>
+
+      <form method="post" action="contact.php">
+        <label>Name:</label>
+        <input name="sender" />
+
+        <label>Email address:</label>
+        <input name="senderEmail" />
+
+        <label>Message:</label>
+        <textarea rows="5" cols="20" name="message"></textarea>
+
+        <input type="submit" name="submit" />
+      </form> -->
 
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
@@ -425,19 +668,23 @@
                 <div class="address">
                   <i class="icofont-google-map"></i>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>
+                    13 mahvir estate opposite bhagat dhana dal behind anupam
+                    cinema khokhra, <br />
+                    Ahmedabad, Gujarat 380021, India
+                  </p>
                 </div>
 
                 <div class="email">
                   <i class="icofont-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>jaynilhosieryworks@gmail.com</p>
                 </div>
 
                 <div class="phone">
                   <i class="icofont-phone"></i>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <p>+91 9426322292</p>
                 </div>
               </div>
             </div>
