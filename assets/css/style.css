@@ -2474,3 +2474,9 @@ section {
 #footer .credits a {
   color: #f6b024;
 }
+
+/* my change */
+.productsName {
+  background-color: rgba(5, 87, 158, 0.9);
+  color: white;
+}
